@@ -20,19 +20,35 @@
 
 
 .contenedor{
-    width: 70%;
-    height: 250px;
-    margin: 30px auto;
+    width: 50%;
+    height: 200px;
+    margin: 20px auto;
     background-color: rgb(255, 239, 9);
     border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
+.contenedortres {
+    width: 50%;
+    height: 100px;
+    margin: 30px auto;
+    background-color: rgb(9, 255, 152);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+}
 
 .btn {
+  
+  cursor: pointer;
     font-size: 17px;
     background: transparent;
     border: none;

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html class="fondoColor" lang="en">
+<html  class="fondoColor" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listado de personas</title>
     <link rel="stylesheet" href="estilo.css">
+    
 </head>
-<body onload="mostrarPersonas()">
+<body onload="mostrarPersonas()" >
 
     <svg class="imagen" xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"><path fill="#021b2b" fill-opacity="1" d="M0,320L60,277.3C120,235,240,149,360,122.7C480,96,600,128,720,128C840,128,960,96,1080,96C1200,96,1320,128,1380,144L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
@@ -23,16 +24,23 @@
     <div class="contenedor">
         <div class="elemento" >
             <ul id="personas" >
-                <li>Eduardo Solis</li>
-                <li>Pedrito Quiñones</li>
+
             </ul>
         </div>
     </div>
+    
+    <div class="contenedortres" >
+        <form id='forma'>
+            <input placeholder="Ingrese su nombre" id="nombre"  type="text">
+            <input placeholder="Ingrese su apellido" id="apellido" type="text">
+        </form>
+    </div>
 
+    <div class="boton">
+        <button class="btn" onclick="agregarPersona()">Agregar</button>
+    </div>
 
-    <button class="btn">Agregar</button>
-
-    <script src= "javascript/app.js"></script>
-    <script src= "javascript/persona.js"></script>
+    <script src="/javascript/app.js"></script>
+    <script src="/javascript/persona.js"></script>
 </body>
 </html>
