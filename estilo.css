@@ -31,7 +31,7 @@
 }
 
 .contenedortres {
-    width: 50%;
+    width: 70%;
     height: 100px;
     margin: 30px auto;
     background-color: rgb(9, 255, 152);
@@ -47,8 +47,7 @@
 }
 
 .btn {
-  
-  cursor: pointer;
+    cursor: pointer;
     font-size: 17px;
     background: transparent;
     border: none;
