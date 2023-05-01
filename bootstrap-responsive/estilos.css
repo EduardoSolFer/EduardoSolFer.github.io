@@ -42,6 +42,11 @@
     font-size: 25px;
 }
 
+.colormain{
+    padding-bottom: 180px;
+    background: rgb(255,255,255);
+background: linear-gradient(124deg, rgba(255,255,255,1) 0%, rgba(68,195,205,1) 100%);
+}
 
 .cuerpo{
     width: 100%;
@@ -55,6 +60,8 @@
     padding: 30px;
     color: #bd2f28;
     text-align: center;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
 }
 
 .slogan:hover{
@@ -62,22 +69,51 @@
     border-radius: 50px;
     background-color: rgb(207, 102, 102);
     width: 50%;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
 }
+
+
 .saguanes{
-    padding-top: 25px;
-    width: 250px;
+    width: 50%;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
 }
+
+.saguanTxt{
+    background-color: rgb(207, 102, 102);
+    border-radius: 25px;
+    padding: 10px;
+    width: 30%;
+}
+
+
+
 .puertas{
-    padding-top: 100px;
+    /* padding-top: 100px; */
     width: 250px;
 }
 
 
+.contenedorcuerpofinal{
+    margin-bottom: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
+.cuerpofinal{
+    border: 1px solid  rgb(207, 102, 102);
+    width: 50px;
+    border-radius: 30px;
+}
 
-
-
+.cuerpofinal:hover{
+    width: 90%;
+    font-size: 25px;
+    background-color:  rgb(207, 102, 102);
+}
 
 
 
@@ -86,6 +122,11 @@
 
 
 .contenedorFooter{
+    position: fixed;
+    bottom: 0px;
+    z-index: 100;
+    left: 0;
+    right: 0;
     background-color:#295264;
     width: 100%;
     height: 110px;
@@ -112,18 +153,86 @@
     width: 100%;
 }
 
-
-.estilo{
-    width: 40px;
-    height: 40px;
-    color: black;
-}
 .iconos{
     width: 100%;
     display: flex;
     justify-content: around;
     align-items: center;
 }
+
+.estilo:hover{
+    color: black;
+}
+
+
+/* .container{
+    position: relative;
+} */
+.caja{
+    float: left;
+}
+.caja1{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+.caja1:hover{
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+}
+
+.caja2{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+.caja2:hover{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+.caja3{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+.caja3:hover{
+    -webkit-transform: translate(10%);
+    transform: translate(10%);
+}
+.caja4{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+.caja4:hover{
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+}
+.caja5{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+  }
+  .caja5:hover{
+    -webkit-transform: perspective(150px) rotateX(45deg);
+    transform: perspective(150px) rotateX(45deg);
+  }
+.caja6{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+.caja6:hover{
+    -webkit-transform: matrix(0.5, 0.1, 0.5,1,10, -2);
+    transform: matrix(0.5, 0.1, 0.5, 1, 10, -2);
+}
+.caja7{
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+.caja7:hover{
+    -webkit-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+
+
+
+
 
 .perfil{
     text-decoration: none;
@@ -148,6 +257,17 @@
         margin-top: -25px;
         width: 100%;
     }
+
+    .saguanes{
+        width: 60%;
+    }
+    .saguanTxt{
+        width: 150px;
+        background-color: rgb(207, 102, 102);
+        border-radius: 25px;
+        padding: 8px;
+        font-size: 10px;
+    }
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
@@ -156,8 +276,16 @@
 }
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
-    
+@media (min-width: 991.98px) {
+    .saguanTxt:hover{
+        background-color: rgb(207, 102, 102);
+        border-radius: 25px;
+        font-size: 30px;
+        width: 45%;
+        -webkit-transform: skew(10deg);
+        transform: skew(10deg);
+
+    }
 }
 
 /* `xl` applies to large devices (desktops, less than 1200px) */
