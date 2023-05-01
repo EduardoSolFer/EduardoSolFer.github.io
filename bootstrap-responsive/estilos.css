@@ -4,6 +4,11 @@
 }
 
 .fondoNav{
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    left: 0;
+    right: 0;
     padding-left: 80px;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,15,213,1) 65%, rgba(0,212,255,1) 100%);
@@ -19,6 +24,7 @@
 }
 
 .centradoDiv{
+    margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,11 +32,44 @@
 
 .imgCar{
     width: 100%;
+    height: 100%;
     }
 
 .nav-link:hover{
     background-color: rgb(49, 96, 228);
     border-radius: 25px;
+    color: white;
+    font-size: 25px;
+}
+
+
+.cuerpo{
+    width: 100%;
+    background-color: #fad9a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan{
+    padding: 30px;
+    color: #bd2f28;
+    text-align: center;
+}
+
+.slogan:hover{
+    margin-top: 0;
+    border-radius: 50px;
+    background-color: rgb(207, 102, 102);
+    width: 50%;
+}
+.saguanes{
+    padding-top: 25px;
+    width: 250px;
+}
+.puertas{
+    padding-top: 100px;
+    width: 250px;
 }
 
 
@@ -40,6 +79,56 @@
 
 
 
+
+
+
+
+
+
+.contenedorFooter{
+    background-color:#295264;
+    width: 100%;
+    height: 110px;
+    text-align: center;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infFooter{
+    margin-top: -20px;
+    width: 70%;
+}
+
+.contenedorInfoFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.estilo{
+    width: 40px;
+    height: 40px;
+    color: black;
+}
+.iconos{
+    width: 100%;
+    display: flex;
+    justify-content: around;
+    align-items: center;
+}
+
+.perfil{
+    text-decoration: none;
+    color: black;
+}
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -48,6 +137,16 @@
     }
     .nav-item{
         padding-left: 30px;
+    }
+    .footer{
+        height: 100px;
+    }
+    .estilo{
+        width: 20px;
+    }
+    .infFooter{
+        margin-top: -25px;
+        width: 100%;
     }
 }
 
