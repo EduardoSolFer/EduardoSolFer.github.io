@@ -48,12 +48,71 @@
             
         </div>
     </nav>
+   
     <main class="fondomain">
-        <div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nihil tempora, modi doloribus quas numquam optio quod a voluptas qui temporibus esse deserunt ut perspiciatis obcaecati pariatur sunt magnam sed!
-            </p>
+        <div class="contenedorOnda" >
+                <h2 class="text-center pt-5 mt-5 fs-1"  >¿Quienes somos?</h2>
+            
+            <div class="textoPrincipal">
+                <span class="textoDecorativo">
+                    La pailería es una actividad que se ha practicado durante siglos,<br>
+                    y que aún hoy en día sigue siendo importante en muchos sectores <br>
+                    industriales y artesanales. Un buen pailero tiene la capacidad de <br>
+                    transformar láminas de metal en piezas útiles y estéticas, ya sea <br>
+                    para fabricar herramientas, piezas de maquinaria, <br> 
+                    mobiliario urbano, entre otros.
+                </span>
+            </div>
         </div>
     </main>
+
+    <footer>
+        <div class="contenedorFooter">
+            <div class="footer">
+                <div class="container d-flex justify-content-around iconos">
+                    <a href="https://www.facebook.com/profile.php?id=100067067946898">
+                        <i class="caja caja1 fs-1 estilo bi bi-facebook"></i>
+                    </a>
+                    <a href="https://api.whatsapp.com/send/?phone=7751186707">
+                        <i class="caja caja2 fs-1 estilo bi bi-whatsapp"></i>
+                    </a>
+                    <a  id="alerta" onclick="invalido()" href="">
+                        <i class="caja caja3 fs-1 estilo bi bi-instagram"></i>
+                    </a>
+                    <script> 
+                        function invalido() {
+                            let alerta1 = window.alert("Sitio en construccion");
+                            document.getElementById(alerta).innerHTML = alerta;
+                        }
+                    </script>
+                    <a id="alerta" onclick="invalido()" href="">
+                        <i class="caja caja4 fs-1 estilo bi bi-chat-left-text"></i>
+                    </a>
+                    <a href="https://goo.gl/maps/517THNn971sLUDSC9">
+                        <i class="caja caja5 fs-1 estilo bi bi-geo-alt"></i>
+                    </a>
+                    <a id="alerta" onclick="invalido()" href="">
+                        <i class="caja caja6 fs-1 estilo bi bi-telephone-inbound"></i>
+                    </a>
+                    <a href="mailto:lalo200195@gmail.com">
+                        <i class="caja caja7 fs-1 estilo bi bi-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="contenedorInfoFooter">
+                <div class="infFooter">
+                    <p style="color: black">
+                        <i class="bi bi-c-square"></i> 2023
+                        <a class="perfil" target="_blank" href="http://eduardosolfer.github.io/">SolFerDev.</a>
+                        Derechos reservados
+                    </p>
+                </div>
+            </div> 
+        </div>
+        
+    </footer>
+
+
 </body>
 </html>
